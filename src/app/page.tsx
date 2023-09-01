@@ -1,95 +1,46 @@
+'use client'
 import Image from 'next/image'
-import styles from './page.module.css'
+import img  from "../../public/img01.png";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      <section className="home section" id="home">
+            <div className="home__container container grid">
+                <div className="home__data">
+                    <span className="home__greeting">Hello, I'm</span>
+                    <h1 className="home__name">Haliee Keys</h1>
+                    <h3 className="home__education">Frontend Developer</h3>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+                    <div className="home__button">
+                        <a download="" href="assets/pdf/hailee-Cv.pdf" className="button button--ghost">
+                            Download CV
+                        </a>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+                        <a href="#about" className="button">About</a>
+                    </div>
+                </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+                <div className="home__handle">
+                    <Image src={img} alt="asd " className="home__img"/>
+                </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
+                <div className="home__social">
+                    <a href="#" target="_blank" className="home__social-link">
+                        <i className='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="#" target="_blank" className="home__social-link">
+                        <i className='bx bxl-github'></i>
+                    </a>
+                    <a href="#" target="_blank" className="home__social-link">
+                        <i className='bx bxl-dribbble'></i>
+                    </a>
+                </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+                <a href="#about" className="home__scroll">
+                    <i className='bx bx-mouse home__scroll-icon'></i>
+                    <span className="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>     
   )
 }
