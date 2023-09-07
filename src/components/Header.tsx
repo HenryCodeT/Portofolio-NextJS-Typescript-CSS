@@ -7,7 +7,7 @@ export const Header = () => {
   const context = useContext(ThemeContext);
 
   return (
-    <header className="header" id="header">
+    <header className="header">
       <nav className="nav container">
           <a href="#" className="nav__logo">Henry</a>
 
@@ -46,8 +46,8 @@ export const Header = () => {
           </div>
           {
             context?.theme == 'light-theme' 
-            ? <BiSun onClick={context?.toggleTheme}/>
-            : <BiMoon onClick={context?.toggleTheme}/>
+            ? <BiSun className='sun-icon' onClick={context?.toggleTheme}/>
+            : <BiMoon className='moon-icon' onClick={context?.toggleTheme}/>
           }
       </nav>
     </header>
