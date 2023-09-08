@@ -22,7 +22,7 @@ const Skills = () => {
                 <i className='bx bxs-badge-check'></i>
 
                 <div>
-                  <h3 className="skills__name">CSS/SCSS</h3>
+                  <h3 className="skills__name">CSS | SCSS</h3>
                   <span className="skills__level">Advanced</span>
                 </div>
               </div>
@@ -51,8 +51,8 @@ const Skills = () => {
                 <i className='bx bxs-badge-check'></i>
 
                 <div>
-                  <h3 className="skills__name">Git</h3>
-                  <span className="skills__level">Advanced</span>
+                  <h3 className="skills__name">Tailwind</h3>
+                  <span className="skills__level">Intermediate</span>
                 </div>
               </div>
 
@@ -60,7 +60,7 @@ const Skills = () => {
                 <i className='bx bxs-badge-check'></i>
 
                 <div>
-                  <h3 className="skills__name">React</h3>
+                  <h3 className="skills__name">React | Next </h3>
                   <span className="skills__level">Advanced</span>
                 </div>
               </div>
@@ -77,8 +77,8 @@ const Skills = () => {
                 <i className='bx bxs-badge-check'></i>
 
                 <div>
-                  <h3 className="skills__name">Node JS</h3>
-                  <span className="skills__level">Advanced</span>
+                  <h3 className="skills__name">Node JS | Express</h3>
+                  <span className="skills__level">Intermediate</span>
                 </div>
               </div>
 
@@ -86,8 +86,8 @@ const Skills = () => {
                 <i className='bx bxs-badge-check'></i>
 
                 <div>
-                  <h3 className="skills__name">Python</h3>
-                  <span className="skills__level">Advanced</span>
+                  <h3 className="skills__name">Java | Spring Booot</h3>
+                  <span className="skills__level">Intermediate</span>
                 </div>
               </div>
 
@@ -95,8 +95,8 @@ const Skills = () => {
                 <i className='bx bxs-badge-check'></i>
 
                 <div>
-                  <h3 className="skills__name">MySQL</h3>
-                  <span className="skills__level">Advanced</span>
+                  <h3 className="skills__name">SQL</h3>
+                  <span className="skills__level">Intermediate</span>
                 </div>
               </div>
 
@@ -106,8 +106,8 @@ const Skills = () => {
                 <i className='bx bxs-badge-check'></i>
 
                 <div>
-                  <h3 className="skills__name">PHP</h3>
-                  <span className="skills__level">Intermediate</span>
+                  <h3 className="skills__name"> AWS - EC2</h3>
+                  <span className="skills__level">Basic</span>
                 </div>
               </div>
 
@@ -115,8 +115,8 @@ const Skills = () => {
                 <i className='bx bxs-badge-check'></i>
 
                 <div>
-                  <h3 className="skills__name">Firebase</h3>
-                  <span className="skills__level">Advanced</span>
+                  <h3 className="skills__name">Firebase | Supabase</h3>
+                  <span className="skills__level">Basic</span>
                 </div>
               </div>
 
@@ -125,13 +125,14 @@ const Skills = () => {
 
                 <div>
                   <h3 className="skills__name">Mongo DB</h3>
-                  <span className="skills__level">Advanced</span>
+                  <span className="skills__level">Intermediate</span>
                 </div>
               </div>
 
             </div>
           </div>
         </div>
+        
       </div>
     </section>
   )
