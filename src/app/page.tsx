@@ -14,7 +14,7 @@ export default function Home() {
                         <h3 id='head1' className="home__name">Hello, I&lsquo;m</h3>
                         <h1 id='head2' className="home__name">Henry Torres</h1>
                         <h3 id='head3' className="home__name">Full Stack Developer</h3>
-                        <h1 id='head4' className="home__name">Henry Torres - Full Stack Developer</h1>
+                        <h1 id='head4' className="home__name">Full Stack Developer</h1>
                     </div>
                     <div className="home__button">
                         <a download="" href="assets/pdf/hailee-Cv.pdf" className="button button--ghost">
