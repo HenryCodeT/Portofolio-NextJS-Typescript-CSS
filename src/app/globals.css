@@ -847,6 +847,38 @@ left: 85%;
   padding-top: 1rem;
 }
 
+.portofolio__box{
+  background-color: var(--container-color);
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.5rem;
+  display: flex;
+}
+
+.portofolio__description{
+  flex: 2;
+  margin: 1rem 2rem;
+}
+
+.portofolio__title{
+  font-size: var(--small-font-size);
+}
+
+.portofolio__subtitle{
+  font-size: var(--tiny-font-size);
+  color: var(--text-color);
+  text-align: justify;
+}
+
+.portofolio__img {
+  flex: 1;
+  border-radius: 50px;
+}
+
+.portofolio__button{
+  margin: 1.5rem 0.5rem;
+  text-align: center;
+}
+
 
 /*////////////////////// END WORK ///////////////////////*/
 
@@ -955,6 +987,8 @@ left: 85%;
 }
 /*//////////////////////// END CONTACT ///////////////////////*/
 
+
+
 /*//////////////////////// SCROLL BAR ////////////////////////*/
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -975,6 +1009,7 @@ left: 85%;
   background-color: var(--first-color-alt);
 }
 /*//////////////////////// END SCROLL BAR ////////////////////////*/
+
 
 /*=============== RESPONSIVE ===============*/
 
