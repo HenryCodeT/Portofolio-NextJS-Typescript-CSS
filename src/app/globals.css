@@ -1030,6 +1030,11 @@ left: 85%;
   }
 
   /* ======= Portofolio ======= */
+  .portofolio__subtitle{
+    font-size: var(--font-medium);
+    color: var(--text-color);
+    text-align: justify;
+  }
   .portofolio__img {
     display: block;
     flex: 1;
