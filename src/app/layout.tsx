@@ -1,5 +1,3 @@
-'use client'
-// import { useState } from 'react'
 import {ThemeContext, ThemeProvider} from '@/context/ThemeProvider'
 import './globals.css'
 import type { Metadata } from 'next'

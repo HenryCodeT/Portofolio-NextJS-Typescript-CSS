@@ -1,9 +1,9 @@
 const Skills = () => {
   return (
-    <section className="skills section" id="skills">
+    <section className="section">
       <span className="section__subtitle">My Abilities</span>
       <h2 className="section__title">My Experience</h2>
-      <div className="skills__container container grid">
+      <div className="skills__container ">
         <div className="skills__content">
           <h3 className="skills__title">Frontend Development</h3>
 

@@ -63,6 +63,7 @@ textarea {
 
 body {
   background: var(--body-color);
+  color: var(--text-color);
   /* -webkit-overflow-Y: hidden;
   -moz-overflow-Y: hidden;
   -o-overflow-Y: hidden;
@@ -669,7 +670,7 @@ left: 85%;
   display: inline-block;
   background-color: var(--first-color);
   color: var(--body-color);
-  padding: 0.75rem 1rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.8rem;
   font-weight: var(--font-medium);
   transition: 0.4s;
@@ -787,9 +788,9 @@ left: 85%;
 
 /*////////////////////// SKILLS ///////////////////////*/
 .skills__container {
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem;
-  
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 3rem;
+  margin: 0 2rem;
 }
 
 .skills__content {
@@ -870,12 +871,13 @@ left: 85%;
 }
 
 .portofolio__img {
+  display: none;
   flex: 1;
   border-radius: 50px;
 }
 
 .portofolio__button{
-  margin: 1.5rem 0.5rem;
+  margin: 1rem 0.25rem;
   text-align: center;
 }
 
@@ -970,12 +972,10 @@ left: 85%;
 
 .contact__form-tag {
   position: absolute;
-  top: -0.75rem;
+  top: -1.25rem;
   left: 1.25rem;
   font-size: var(--smaller-font-size);
   padding: 0.25rem;
-  background-color: var(--body-color);
-  z-index: 10;
 }
 
 .contact__form-area {
@@ -1012,8 +1012,32 @@ left: 85%;
 
 
 /*=============== RESPONSIVE ===============*/
+/* ======= For medium Devices ======= */
+@media screen and (min-width: 576px) {
+  .nav__menu {
+    width: 328px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 
-@media screen and (min-width: 968px) {
+  /* ======= Container ======= */
+  .contact__container {
+    display: grid;
+    grid-template-columns: 220px 340px;
+    column-gap: 2rem;
+    justify-content: center;
+  }
+
+  /* ======= Portofolio ======= */
+  .portofolio__img {
+    display: block;
+    flex: 1;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   :root {
     --biggest-font-size: 2.5rem;
     --h1-font-size: 2.25rem;
@@ -1037,17 +1061,16 @@ left: 85%;
     height: 18rem;
   }
 
+  /* ======= Contact ======= */
   .contact__container {
     grid-template-columns: repeat(2, 430px);
     column-gap: 6rem;
   }
-}
-/* ======= For medium Devices ======= */
-@media screen and (min-width: 630px) {
-  .nav__menu {
-    width: 328px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+
+  /* ======= Skills ======= */
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    margin: 0 2rem;
   }
 }
