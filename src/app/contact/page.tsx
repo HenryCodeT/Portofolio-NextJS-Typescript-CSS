@@ -1,40 +1,39 @@
+'use client'
 import { useRouter } from "next/navigation";
-import React,{ useRef } from "react";
+import React, { useRef } from "react";
 import { BiLogoGithub, BiLogoLinkedinSquare, BiMailSend } from "react-icons/bi";
 import emailjs from "@emailjs/browser";
-
-
 
 const Contact = () => {
     const form = useRef<any>(null);
     const router = useRouter();
-    
+
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        
+
         if (form.current) {
             emailjs
-            .sendForm(
-                process.env.NEXT_PUBLIC_YOUR_SERVICE_ID!,
-                process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID!,
-                form.current,
-                process.env.NEXT_PUBLIC_YOUR_PUBLIC_ID!
+                .sendForm(
+                    process.env.NEXT_PUBLIC_YOUR_SERVICE_ID!,
+                    process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID!,
+                    form.current,
+                    process.env.NEXT_PUBLIC_YOUR_PUBLIC_ID!
                 )
                 .then(
                     (result) => {
                         console.log(result.text);
                     },
-                (error) => {
-                console.log(error.text);
-                }
-            );
+                    (error) => {
+                        console.log(error.text);
+                    }
+                );
         }
         alert("Your message has been sent!");
         router.push("/");
     };
-  
+
     return (
-    <section className="contact section" id="contact">
+        <section className="contact section" id="contact">
             <span className="section__subtitle">Get in touch</span>
             <h3 className="section__title">Contact Me</h3>
             <div className="contact__container container grid">
@@ -43,7 +42,7 @@ const Contact = () => {
 
                     <div className="contact__info">
                         <div className="contact__card">
-                            <BiMailSend className='bx bx-mail-send contact__card-icon'/>
+                            <BiMailSend className='bx bx-mail-send contact__card-icon' />
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">torrescondorihenry@gmail.com</span>
                             <a href="mailto:example@domain.com" target="_blank" className="contact__button">
@@ -52,7 +51,7 @@ const Contact = () => {
                         </div>
 
                         <div className="contact__card">
-                            <BiLogoGithub className='bx bxl-whatsapp contact__card-icon'/>
+                            <BiLogoGithub className='bx bxl-whatsapp contact__card-icon' />
                             <h3 className="contact__card-title">GitHub</h3>
                             <span className="contact__card-data">HenryCodeT</span>
                             <a href="https://github.com/HenryCodeT" target="_blank"
@@ -62,7 +61,7 @@ const Contact = () => {
                         </div>
 
                         <div className="contact__card">
-                            <BiLogoLinkedinSquare className='bx bxl-twitter contact__card-icon'/>
+                            <BiLogoLinkedinSquare className='bx bxl-twitter contact__card-icon' />
                             <h3 className="contact__card-title">Linkedin</h3>
                             <span className="contact__card-data">henry-tc</span>
                             <a href="https://www.linkedin.com/in/henry-tc/" target="_blank" className="contact__button">
@@ -100,6 +99,7 @@ const Contact = () => {
                 </div>
             </div>
         </section>
-)}
+    )
+}
 
 export default Contact;
