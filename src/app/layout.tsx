@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { useContext } from 'react'
 import { Header } from '@/components/Header'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: "Henry's Portfolio",
@@ -20,6 +21,7 @@ export default function RootLayout({
           <Header/>
           <main>
             {children}
+            <Analytics />
           </main>  
       </ThemeProvider>
     </html>
