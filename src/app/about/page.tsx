@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BiAward, BiBriefcaseAlt, BiSupport } from "react-icons/bi";
 
 const About = () => {
@@ -31,7 +32,7 @@ const About = () => {
                     While my journey began in the realm of electronic engineering, I found a new passion for web development during my time at a Full Stack Developer Bootcamp, which I had the privilege to attend through a prestigious government scholarship. I initially ventured into freelance projects, honing my skills, and later progressed to become a Frontend Developer at a startup. Subsequently, I thrived as a full-stack developer in the area of operational continuity, where I further expanded my knowledge and abilities.
                     I am thrilled at the prospect of becoming a part of your dynamic and collaborative team. My aim is to contribute my well-honed programming skills and vast knowledge to drive the success of your projects while also fostering my professional and personal growth, including the development of essential soft skills.
                     </p>
-                    <a href="#contact" className="button about__button-contact">Contact Me</a>
+                    <Link href="/contact" className="button about__button-contact">Contact Me</Link>
                 </div>
             </div>
         </section>

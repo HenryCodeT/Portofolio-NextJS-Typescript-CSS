@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import img  from "../../public/img01.png";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,10 +18,10 @@ export default function Home() {
                         <h1 id='head4' className="home__name">Full Stack Developer</h1>
                     </div>
                     <div className="home__button">
-                        <a download="" href="assets/pdf/hailee-Cv.pdf" className="button button--ghost">
+                        {/* <a download="" href="assets/pdf/hailee-Cv.pdf" className="button button--ghost">
                             Download CV
-                        </a>
-                        <a href="#about" className="button">About</a>
+                        </a> */}
+                        <Link href="/about" className="button">About</Link>
                     </div>
                 </div>
             </div>
